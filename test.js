@@ -1,0 +1,1 @@
+console.log("Notepad is working")
