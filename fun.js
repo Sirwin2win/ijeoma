@@ -131,3 +131,23 @@ const circle = function(r){ // pi*(r**2)
     return pi*(r**2)
 }
 console.log(circle(4))
+// solving equations using js function
+/*
+Question 1 (Factorization): Solve \(x^{2}-5x+6=0\)   6/4
+
+(-b+-sqrt(b**2-4ac))/2a
+half means 1/2 and it means 0.5
+raised to power **
+let rut = (b**2-4*a*c)**0.5
+let x1 = (-b+rut)/2*a
+let x2 = (-b-rut)/2*a
+*/
+const eqn = function(a,b,c){
+let rut = (b**2-4*a*c)**0.5
+let x1 = (-b+rut)/2*a
+let x2 = (-b-rut)/2*a
+return `${x1} ${x2}`
+}
+console.log(eqn(1,-5,6))
+console.log(eqn(2,-7,6))
+console.log(eqn(3,-2,1/3))
