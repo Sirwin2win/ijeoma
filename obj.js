@@ -78,6 +78,7 @@ function Human(name,age,email){
         return `I am ${this.name} by name and I am also ${this.age} years old.`
     }
 }
+// This 'this' keyword is like a place holder representing the objects at the point of function definition
 // Secondly, we initialize objects from the constructor function
 const eze = new Human("Eze Uchenna",25,"ezeuchenna@gmail.com")
 console.log(eze.name)
@@ -85,6 +86,7 @@ console.log(eze.details())
 const ola = new Human("Olaniyi Adetokumbo",30,"olaade@gmail.com")
 console.log(ola.email)
 console.log(ola.details())
+// const bisi = new Human(("Bisola Ademola",20,'bisiade@gmail.com'))
 // Built in methods in javascript e.g toString(), slice(), splice(), find(), map(), toUpperCase(), toLowerCase()
 const name = "John Doe"
 const num = '25'
@@ -103,5 +105,60 @@ ii. how old is friend, using a method
 iii. add a new key called favColor to friend and assign orange color to it
 2. Loop through friend object
 */
+// Animal constructor function
+function Animal(name,age,legs){
+    this.name = name
+    this.age = age
+    this.legs = legs
+    this.sound = function(n){
+        return `The ${this.name} ${n}`
+    }
+}
+// declaring objects from Animal function
+const cat = new Animal("Cat",2,4)
+console.log(cat.name)
+console.log(cat.age)
+console.log(cat.legs)
+console.log(cat.sound("Mews"))
+// another object
+const dog = new Animal("Bingo",5,4)
+console.log(dog.name)
+console.log(dog.sound('barks'))
+// Account constructor function
+function Account(name,no, balance=0){
+    this.name = name
+    this.no = no
+    this.balance = balance
+    // balance
+    this.balanceEnquiry = function(){
+        return `$${this.balance}`
+    }
+    // deposit
+    this.deposit = function(amount){
+        this.balance += amount
+        return `${amount} creadited to your account successfully!, New Bal:$${this.balance}`
+    }
+    // withdrawal
+    this.withdraw = function(amount){
+        if(amount>this.balance){
+            return `Insufficient balance. Bal:$${this.balance}`
+        }else{
+            this.balance -= amount
+            return `$${amount} withdtawn successfully. Bal:$${this.balance}`
+        }
+    }
+}
+// objects
+const uche = new Account("Uche Ray",5647354)
+console.log(uche.balanceEnquiry())
+console.log(uche.deposit(500))
+console.log(uche.deposit(1000))
+console.log(uche.deposit(200))
+console.log(uche.balanceEnquiry())
+console.log(uche.withdraw(400))
+const uju = new Account("Ujunwa Ogbonna",628525,300)
+console.log(uju.balanceEnquiry())
+// console.log(uju.withdraw(400))
+
 
 
