@@ -1,0 +1,15 @@
+#demo{
+    color:#0f0
+}
+marquee{
+    background-color: red;
+    color: #fff;
+    font-size: large;
+    font-weight: 900;
+}
+#land{
+    height: 300px;
+    width: 300px;
+    background-color: navy;
+    color: #fff;
+}
