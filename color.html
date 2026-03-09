@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(100,100,255);
+            color: rgb(255,255,255);
+        }
+        #para2{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255,0,0,1);
+            color: rgb(255,255,255);
+        }
+        #hex1{
+            height: 200px;
+            width: 200px;
+            background-color:#f25f4b;
+            color:#fff ;
+        }
+        
+        #hsl1{
+            height: 200px;
+            width: 200px;
+            background-color:hsl(180,100%,50%);
+            color:#fff ;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--CSS Colors
+1. RGB and RGBA where A = alpha which is opacity or how transparent a color a should be
+2. hex
+3. hsl and hsla where a = alpha which is opacity or how transparent a color a should be
+-->
+ <!-- RGB = Red, Green , Blue
+ Red= 0 to 255
+ Green = 0 to 255
+ Blue = 0 to 255
+ a = 0 to 1(e.g 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1)
+ -->
+ <p id="para1">Para One</p>
+ <p id="para2">Para Two</p>
+ <!-- Hexadecimal (hex) => Base 16 
+0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+0 to F
+#00f => short hand blue
+#0000ff => long hand blue
+ -->
+<p id="hex1">Para Hex1</p>
+<!-- HSL => Hue, Saturated, Lightness
+hue = 0 to 360 deg: The actual color ring
+For hue; 0 =red, 120 = green, 240=blue
+saturated = 0 to 100% : How strong the color is
+lightness = 0 to 100% : whiteness of the color
+background-color:hsl(0,100%,50%);// red background
+-->
+<p id="hsl1">Para HSL</p>
+</body>
+</html>

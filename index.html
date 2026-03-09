@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-
+     <!-- Internal css -->
+<style>
+    h1{
+        height: 100px;
+        width: 200px;
+        background-color: orange;
+        color: white;
+    }
+    #day{
+        color: green;
+    }
+    #day2{
+        color: fuchsia;
+    }
+    .week{
+        height: 200px;
+        width: 200px;
+        background-color: navy;
+        color: white;
+    }
+</style>
 </head>
 <body>
     <h1 id="land">This is the index page</h1>
+    <!-- 
+    CSS => Cascading Style Sheet. 
+    This is not a programming language, rather a stylesheet language.
+    CSS is used to add look and feel in a web page.
+    CSS Syntax
+    selector {property:value;property:value}
+    a pair of property/value is called a declaration e.g p{color:'red',height:'100px'}
+    THis means that color:'red' together is a declaration
+    Ways of Using css
+1. Inline css e.g <p style="color:red">Paragraph</p>
+2. Internal css; Here we include the css within the <head> of the <html> using <style></style>
+3. Extrenal css; Here we inlude css as an external file using the <link> tag, still within
+the <head> tag of the <html> 
+    -->
+    <p style="color: red;">Inline css</p>
+    <marquee behavior="reverse" direction="reverse">News Flash</marquee>
+    <!-- CSS Id and Class
+Id is a unique identity in an html element attribute while a class is an 
+attribute that could be used by more than one element 
+    -->
+<h3 id="day">Header 3</h3>
+<h4 id="day2">Header 4</h4>
+<div class="week">Week One</div>
+<h6 class="week">Header Six</h6>
+<h5 class="week">Header five</h5>
+
 </body>
 </html>
