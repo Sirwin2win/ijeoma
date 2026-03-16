@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Decsendant Combinator */
+       div p{
+        /* color: red; */
+       } 
+       /* Child combinator */
+       div>p{
+        color: fuchsia;
+       }
+       section+p{
+        color: cyan;
+       }
+       aside~h3{
+        color: blue;
+       }
+       h4,h5,h6{
+        height: 300px;
+        width: 300px;
+        background-color: blueviolet;
+       }
+    </style>
+</head>
+<body>
+    <!-- CSS Combinators
+It defines the relationship between two or more selectors
+Types of Combinators
+1. Descendant combinator(space)
+2. Child combinator(>)
+3. Next sibling combinator(+):Used to select an element that is
+ directly after a specified element
+4. Subsequent-Sibling combinator(~): Selects all the elements after the specified element. 
+    -->
+<div>
+    <p>Para 1 </p>
+    <aside>
+        <p>Para 2</p>
+        <p>Para 3</p>
+        <section>
+            <p>para 4</p>
+        </section>
+    </aside>
+</div>
+
+<section>
+    <h1>Header One</h1>
+</section>
+<p>Para 5</p>
+<p>Para 6</p>
+<section>
+    <h2>Header Two</h2>
+</section>
+<p>Para 7</p>
+<p>Para 8</p>
+
+<aside>
+    <h3>Header Three</h3>
+</aside>
+<h3>Header Three 1</h3>
+<h3>Header Three 2</h3>
+<h3>Header Three 3</h3>
+<h3>Header Three 4</h3>
+<h4>Header 4</h4>
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+</body>
+</html>

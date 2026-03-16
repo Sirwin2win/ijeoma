@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p:hover{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            color: white;
+        } */
+        input:focus{
+            background-color: lime;
+            color: white;
+            font-size: 50px;
+            font-weight: 900;
+        }
+        p:first-child{
+            color: red;
+        }
+        
+        p:last-child{
+            color: blue;
+        }
+        h6:nth-child(3n+1){
+            color: fuchsia;
+        }
+        /* unvisited link */
+        a:link{
+            color: blue;
+        }
+        /* Visisted link */
+        a:visited{
+            color: orange;
+        }
+        /* hover effect */
+        a:hover{
+            color: red;
+        }
+        /* selected */
+        a:active{
+            color: green;
+        }
+        h2{
+ height: 400px;
+            width: 400px;
+        }
+        h2::first-letter{
+            font-family: chiller;
+            font-size: 100px;
+            font-weight: bolder;
+            color: blue;
+        }
+        h2::after{
+            content: "Hello World!";
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo Classes
+This is used to style a specific state of an element.
+1. :hover
+2. :focus
+3. :active 
+4. :first-child
+5. :last-child
+6. :nth-child(n)
+Syntax
+selector:pseudo-class-name{
+    css properties
+}
+    Pseudo Elements
+This is used to style a specific part of an element
+1. ::first-line
+2. ::first-letter
+3. ::before
+4. ::after
+Syntax
+selector:pseudo-element-name{
+    css properties
+}
+    -->
+<a href="dom.html" target="_blank">Visit DOM Page</a>
+<p>Para 1</p>
+<input type="text">
+<div>
+    <p>Para first</p>
+    <p>Para 3</p>
+    <p>Para 4</p>
+    <p>Para last</p>
+</div>
+<h6>Header six 0</h6>
+<h6>Header six 1</h6>
+<h6>Header six 2</h6>
+<h6>Header six 3</h6>
+<h6>Header six 4</h6>
+<h6>Header six 5</h6>
+<h2>Lorem ipsum dolor sit amet consectetur,
+     adipisicing elit. Reprehenderit perferendis 
+     odio cum asperiores consequuntur quo velit,
+      sunt iste ut voluptatem
+     quibusdam quia quidem aliquam corporis vero 
+     debitis facilis quos facere!</h2>
+</body>
+</html>
