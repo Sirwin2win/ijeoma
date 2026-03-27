@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        #trans{
+            height: 200px;
+            width: 200px;
+            background-color: navy;
+            color:#fff;
+            transform: translate(100px,100px);
+        }
+        #scale{
+            height: 200px;
+            width: 200px;
+            background-color: navy;
+            color:#fff;
+            transform: scale(2,.5);
+            margin-left: 500px;
+        }
+        #rotate{
+            height: 200px;
+            width: 200px;
+            background-color: navy;
+            color:#fff;
+            transform: rotate(240deg);
+            margin-left: 500px;
+        }
+        #skew{
+            height: 200px;
+            width: 200px;
+            background-color: navy;
+            color:#fff;
+            transform: skew(150deg);
+            margin-left: 500px;
+        }
+        #transition{
+            height: 200px;
+            width: 200px;
+            background-color: navy;
+            color:#fff;
+            border-radius: 20px;
+            transform: translate(300px);
+            transform: rotate(45deg);
+            transition: background-color 4s, width 4s, border-radius 4s, height 4s, transform 4s;
+        }
+        #transition:hover{
+            background-color: red;
+            width: 400px;
+            border-radius: 50%;
+            height: 400px;
+            transform: translate(500px);
+            transform: rotate(360deg);
+        }
+
+        @keyframes demo {
+            from{background-color: lime;}
+            to{background-color: fuchsia;}
+        }
+
+        #anim{
+            background-color: red;
+            width: 400px;
+            border-radius: 50%;
+            height: 400px;
+            animation-name: demo;
+            animation-duration: 4s;
+        }
+
+        @keyframes ijeoma {
+            0%{background-image: repeating-linear-gradient( red, yellow 10%, green 15%);}
+            50%{background-image: url('images/GIRL.jpg');}
+            100%{background-color: orange;}
+        }
+
+        #anim2{
+            background-color: red;
+            width: 400px;
+            border-radius: 50%;
+            height: 400px;
+            animation-name: ijeoma;
+            animation-duration: 10s;
+            /*animation-delay: 5s; */ /* how long it takes before animation start */
+            animation-timing-function: ease;/* this talks about the speed at various intervals */
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes oma {
+            0%{background-color: green; margin-left:0px;margin-top:0px}
+            25%{background-color: yellow; margin-left:200px;margin-top:0px}
+            50%{background-color: red; margin-left:200px;margin-top:200px}
+            75%{background-color: blue; margin-left:0px;margin-top:200px}
+            100%{background-color: fuchsia; margin-left:0px;margin-top:0px}
+        }
+
+        #anim3{
+            background-color: red;
+            width: 200px;
+            border-radius: 50%;
+            height: 200px;
+            animation-name: oma;
+            animation-duration: 10s;
+            color:white;
+            padding: 100px;
+            /*animation-delay: 5s; */ /* how long it takes before animation start */
+            /*animation-timing-function: ease; this talks about the speed at various intervals */
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS Transform
+    Transforms are used to move(translate), scale, rotate or twist(skew) an element 
+    1. Translate: This moves an element along x and y axis
+    2. Scale: This increases or decreases the size of the element
+    3. Rotate: This rotates an element based the specified angle
+    4. Skew: This skews or twists and element based on the specified angle
+
+
+            CSS Transition
+    This allows us to smoothly change the property value of an element over a period of time.
+
+
+            CSS Animation
+    This lets an element to gradually change from one style to another. First declare a keyframe
+    -->
+    <h1 id="trans">Trans1</h1>
+    <h1 id="scale">Scale</h1>
+    <h1 id="rotate">Rotate</h1>
+    <h1 id="skew">Skew</h1>
+    <h1 id="transition">Transition</h1>
+    <h1 id="anim">Animation</h1>
+    <h1 id="anim2">More Animations</h1>
+    <h1 id="anim3">More and More animations</h1>
+</body>
+</html>
